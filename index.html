@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Economy Review Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Economy Review Game</h1>
+    
+    <div id="start-screen">
+      <p>Test your knowledge of economics! Answer questions before time runs out.</p>
+      <button onclick="startGame()">Start Quiz</button>
+    </div>
+
+    <div id="quiz-screen" class="hidden">
+      <h2 id="question-text"></h2>
+      <div id="choices"></div>
+      <div class="bottom-bar">
+        <div id="timer">Time: <span id="time-left">15</span>s</div>
+        <div id="score">Score: <span id="current-score">0</span></div>
+      </div>
+    </div>
+
+    <div id="end-screen" class="hidden">
+      <h2>Quiz Complete!</h2>
+      <p>Your Score: <span id="final-score"></span></p>
+      <div id="review"></div>
+      <button onclick="startGame()">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
